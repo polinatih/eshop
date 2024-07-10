@@ -1,0 +1,252 @@
+
+.header{
+    
+    background-image: url(header-background.jpg);
+    height: 350px;
+    width: 100%;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.header-text{
+    display: flex;
+    flex-direction: column;
+    align-content:space-between;   
+}
+
+.header-text h1{
+    font-family: "Julius Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  padding: 40px 70px;
+  border-radius: 7px;
+  background-color: rgba(0,0,0,0.6);
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.3;
+  
+}
+h1{
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 40px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+}
+.header p{
+    font-family: "Pinyon Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+     color: #F7418F;
+     font-size: 45px;
+    margin-left: 315px;
+    margin-top: -100px;
+    letter-spacing: 3px;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 70px auto;
+}
+.card{
+    flex-basis: 350px;
+    display: flex;
+    flex-direction: column;
+    box-shadow:2px 2px 5px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.card img{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+    object-position: 0 80%;
+    scale: 0.95;
+    margin-bottom: -25px;
+}
+.description{
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size:16px ;
+    font-weight: 400;
+   
+}
+
+.description h4{
+    font-weight: bolder;
+    font-size: 25px; 
+    margin-bottom: -0px;
+    margin-top: 0;                                  
+}
+.description-price{
+    align-self: flex-end;
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: -10px;
+}
+.description-price span{
+    font-weight: bold;
+    font-size: 35px;
+}
+.star{
+    color:#F4D160
+}
+.star2{
+    color: #78C1F3;
+}
+.cm{
+    
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+.cm-option{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin: 15px;
+    font-weight: 600;
+}
+.cm-option select {
+    cursor: pointer;
+    margin-top: 5px; 
+    padding: 5px; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    background-color: #f0f0f0; 
+    color: #333; 
+    font-family: "Poiret One", sans-serif;
+}
+.cm-option select:focus {
+    outline: none;
+    background-color: #e0e0e0; 
+    color: #000; 
+}
+.cm-option select option {
+    background-color: #fff; 
+    color: #000; 
+}
+.cm-option select option:checked {
+    background-color: #78C1F3; 
+    color: #fff; 
+}
+.size-selector {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    margin-left: 0px;
+}
+.size-selector button {
+    background-color: #53b0ee;
+    border: 1px solid #53b0ee;
+    border-radius: 5px;
+    padding: 3px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+}
+.size-selector input {
+    width: 50px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 3px 8px;
+    font-family: "Poiret One", sans-serif;
+}
+.add-to-cart-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.add-to-cart-container button {
+    cursor: pointer;
+    background-color: hsl(334, 100%, 78%);
+    border: 1px transparent;
+    outline: none;
+    border-radius: 5px;
+    font-family: "Poiret One", sans-serif;
+    font-size: 16px;
+    color: white;
+    padding: 10px 20px;
+    width: 90%;
+    font-weight: bolder;
+    transition: 0.3s ease;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.add-to-cart-container button:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 4px 4px rgba(249, 154, 195,0.4);
+    font-weight: bolder;
+}
+.image {
+    position: relative;
+    height: 250px;
+    
+}
+.badge{
+width: 20%;
+background-color: orange;
+color: white;
+align-self: flex-end;
+border-radius: 5px;
+margin: -10px -10px -19px;
+padding: 5px;
+font-weight: bold;
+text-align: center;
+z-index: 1;
+}
+
+.product-overlay {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 5px 5px 0 0;
+    
+}
+
+.image:hover .product-overlay {
+    opacity: 1;
+}
+
+.quick-view {
+    padding: 10px 15px;
+    background-color: #F7418F;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Poiret One", sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.quick-view:hover {
+    background-color: #f6006a;
+}
